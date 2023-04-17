@@ -36918,7 +36918,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-29 17:52:10 +0000">06/29/2022</time>
+    <time datetime="2023-04-14 17:46:26 +0000">04/14/2023</time>
     
   
 
@@ -37063,7 +37063,13 @@ Do not reboot more than one node at a time.
 </div>
 </li>
 <li>
-<p>After the node or set of nodes has rebooted with the new ONTAP image, confirm that the new software is running: <code>system node image show</code></p>
+<p>After the node or set of nodes has rebooted with the new ONTAP image, set the privilege level to advanced: <code>set -privilege advanced</code></p>
+<div class="paragraph">
+<p>Enter <strong>y</strong> when prompted to continue</p>
+</div>
+</li>
+<li>
+<p>Confirm that the new software is running: <code>system node image show</code></p>
 <div class="paragraph">
 <p>In the following example, image1 is the new ONTAP version and is set as the current version on node0:</p>
 </div>
