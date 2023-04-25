@@ -9,15 +9,15 @@
   <meta property="og:title" content="Monitor capacity in System Manager" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/us-en/ontap/task_admin_monitor_capacity_in_sm.html" />
-	<meta property="og:description" content="Using System Manager, you can monitor how much storage capacity has been used and how much is still available for a cluster or a local tier." />
+	<meta property="og:description" content="Using System Manager, you can monitor how much storage capacity has been used and how much is still available for a cluster, a local tier, or a storage VM." />
   <meta property="og:image" content="https://docs.netapp.com/us-en/ontap/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Using System Manager, you can monitor how much storage capacity has been used and how much is still available for a cluster or a local tier.">
-  <meta name="keywords" content=" system manager, monitor, capacity, view, measurement, physical, logical, storage, used storage, local tier capacity, aggregate capacity, block, add capacity, volume, used capacity, available capacity, total capacity, snapshot copy, snapshot copies, inactive data, overprovision, over provision, overflows, snapshot copy reserves, reserves, clone"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Using System Manager, you can monitor how much storage capacity has been used and how much is still available for a cluster, a local tier, or a storage VM.">
+  <meta name="keywords" content=" used storage, local tier capacity, aggregate capacity, add capacity, used capacity, available capacity, total capacity, inactive data, overprovision, overflows, snapshot copy reserves, reserves, clone, maximum capacity limit, storage VM, allocated"><!-- Icons -->
   <link rel="icon" href="/us-en/ontap/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -312,7 +312,8 @@
         </li><li>
           <a href="https://docs.netapp.com/fr-fr/ontap/task_admin_monitor_capacity_in_sm.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
         </li></ul>
-    </div><!-- End Language Selector -->
+    </div>
+    <!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
   </div>
@@ -900,6 +901,10 @@
 
 
 
+
+
+
+
         </li>
       </ul>
     
@@ -1333,6 +1338,37 @@
   
 
 
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/us-en/ontap/pdfs/sidebar/Firmware_and_system_updates.pdf" 
+            
+          >
+            <img src="/us-en/ontap/images/pdf.png" alt="" width="16" height="16"/>
+            Firmware and system updates
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
 
 
 
@@ -11377,6 +11413,8 @@
 
 
 
+
+
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -11654,6 +11692,8 @@
 
 
 
+
+
         </li>
       </ul>
     
@@ -11723,6 +11763,37 @@
 
 
 
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/us-en/ontap/pdfs/sidebar/Enable_multifactor_authentication__MFA__accounts.pdf" 
+            
+          >
+            <img src="/us-en/ontap/images/pdf.png" alt="" width="16" height="16"/>
+            Enable multifactor authentication (MFA) accounts
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
 
 
 
@@ -11796,6 +11867,8 @@
             Manage administrator accounts
           </a>
           
+
+
 
 
 
@@ -13679,8 +13752,6 @@
 
 
 
-
-
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -14193,6 +14264,8 @@
             Consistency groups management
           </a>
           
+
+
 
 
 
@@ -16647,11 +16720,11 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Decide which setup method to use"
+      data-pdf-filename="Overview"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/ontap/software_setup/concept_decide_whether_to_use_ontap_cli.html">
-        Decide which setup method to use
+        Overview
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Set up a cluster with System Manager"
@@ -16664,11 +16737,18 @@
       data-pdf-filename="Set up a cluster with the CLI"
       data-li-level="3" 
       class="subfolders "
-    ><a href="/us-en/ontap/software_setup/concept_set_up_the_cluster.html">
+    ><a href="#">
         <div class="na-navbar-padding"> Set up a cluster with the CLI</div>
       </a>
       <ul style="display: none;">
         <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gather information"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/ontap/software_setup/concept_set_up_the_cluster.html">
+        Gather information
+      </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Create the cluster on the first node"
       data-li-level="4#" 
@@ -16682,6 +16762,13 @@
       class=" "
     ><a class="na-navbar-padding" href="/us-en/ontap/software_setup/task_join_remaining_nodes_to_the_cluster.html">
         Join remaining nodes to the cluster
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Convert management LIFs from IPv4 to IPv6"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/ontap/software_setup/ipv4-to-1pv6-conversion-task.html">
+        Convert management LIFs from IPv4 to IPv6
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Check your cluster with Active IQ Config Advisor"
@@ -17249,12 +17336,49 @@
         Update the DQP
       </a></li></ul></li></ul></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Update firmware"
-      data-li-level="2#" 
+      data-pdf-filename="Firmware and system updates"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Firmware and system updates</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview"
+      data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/ontap/task_admin_update_firmware.html">
-        Update firmware
+    ><a class="na-navbar-padding" href="/us-en/ontap/update/index.html">
+        Overview
       </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Enable automatic updates"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/ontap/update/enable-automatic-updates-task.html">
+        Enable automatic updates
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Modify automatic updates"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/ontap/update/modify-automatic-updates-task.html">
+        Modify automatic updates
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage recommended automatic updates"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/ontap/update/manage-automatic-updates-task.html">
+        Manage recommended automatic updates
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Update firmware manually"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/ontap/update/firmware-task.html">
+        Update firmware manually
+      </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Revert ONTAP"
       data-li-level="2" 
@@ -21700,11 +21824,11 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="View the status of efficiency operations"
+      data-pdf-filename="View efficiency operations and status"
       data-li-level="5#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/ontap/volumes/view-status-efficiency-operations-task.html">
-        View the status of efficiency operations
+        View efficiency operations and status
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="View efficiency space savings"
@@ -30763,6 +30887,13 @@
         Create a bucket
       </a></li><li 
       data-pdf-exists="true" 
+      data-pdf-filename="Create a bucket lifecycle rule"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/ontap/s3-config/create-bucket-lifecycle-rule-task.html">
+        Create a bucket lifecycle rule
+      </a></li><li 
+      data-pdf-exists="true" 
       data-pdf-filename="Create an S3 user"
       data-li-level="4#" 
       class=" "
@@ -31080,6 +31211,13 @@
       class=" "
     ><a class="na-navbar-padding" href="/us-en/ontap/authentication/manage-certificates-sm-task.html">
         Manage certificates
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage external key managers"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/ontap/encryption-at-rest/manage-external-key-managers-sm-task.html">
+        Manage external key managers
       </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Manage administrator authentication and RBAC with the CLI"
@@ -31158,12 +31296,49 @@
         Enable SSH public key accounts
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Enable SSH multifactor authentication (MFA)"
-      data-li-level="5#" 
+      data-pdf-filename="Enable multifactor authentication (MFA) accounts"
+      data-li-level="5" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Enable multifactor authentication (MFA) accounts</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview"
+      data-li-level="6#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/ontap/authentication/mfa-overview.html">
+        Overview
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Enable MFA with SSH and TOTP"
+      data-li-level="6#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/ontap/authentication/setup-ssh-multifactor-authentication-task.html">
-        Enable SSH multifactor authentication (MFA)
+        Enable MFA with SSH and TOTP
       </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure local user account for MFA with TOTP"
+      data-li-level="6#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/ontap/authentication/configure-local-account-mfa-totp-task.html">
+        Configure local user account for MFA with TOTP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Reset TOTP configuration"
+      data-li-level="6#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/ontap/authentication/reset-totp-configuration-task.html">
+        Reset TOTP configuration
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Disable TOTP secret key"
+      data-li-level="6#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/ontap/authentication/disable-totp-secret-key-task.html">
+        Disable TOTP secret key
+      </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Enable SSL certificate accounts"
       data-li-level="5#" 
@@ -31258,6 +31433,13 @@
       class=" "
     ><a class="na-navbar-padding" href="/us-en/ontap/authentication/manage-public-key-authentication-concept.html">
         Associate a public key with an administrator account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage SSH public keys and X.509 certificates for an administrator account"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/ontap/authentication/manage-ssh-public-keys-and-certificates.html">
+        Manage SSH public keys and X.509 certificates for an administrator account
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Generate and install a CA-signed server certificate"
@@ -33630,13 +33812,6 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="About"
-      data-li-level="4#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/ontap/data-protection/snapmirror-replication-concept.html">
-        About
-      </a></li><li 
-      data-pdf-exists="true" 
       data-pdf-filename="Asynchronous SnapMirror disaster recovery basics"
       data-li-level="4#" 
       class=" "
@@ -34360,6 +34535,13 @@
       class=" "
     ><a class="na-navbar-padding" href="/us-en/ontap/consistency-groups/modify-task.html">
         Modify
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Modify architecture"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/ontap/consistency-groups/modify-geometry-task.html">
+        Modify architecture
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Clone"
@@ -36918,7 +37100,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-03-31 20:02:48 +0000">03/31/2023</time>
+    <time datetime="2023-04-13 20:47:15 +0000">04/13/2023</time>
     
   
 
@@ -36931,6 +37113,22 @@
           style="border-radius: 50%;"/>
   </a>
   
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-ahibbard">
+    <img  class="avatar avatar-small"
+          alt="netapp-ahibbard"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/85892662?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-aherbin">
+    <img  class="avatar avatar-small"
+          alt="netapp-aherbin"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/38955266?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
 </span>
 
 
@@ -36939,7 +37137,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>Using System Manager, you can monitor how much storage capacity has been used and how much is still available for a cluster or a local tier.</p>
+<p>Using System Manager, you can monitor how much storage capacity has been used and how much is still available for a cluster, a local tier, or a storage VM.</p>
 </div>
 <div class="paragraph">
 <p>Also, beginning with ONTAP 9.10.1, you can use System Manager to view historical data about the cluster’s capacity and projections about how much capacity will be used or available in the future. You can also monitor the capacity of local tiers and volumes.  Additionally, beginning with ONTAP 9.12.1, System Manager also displays the amount of committed capacity for a local tier.</p>
@@ -36951,7 +37149,7 @@
 <img src="/us-en/ontap/images/note.svg" alt="Note">
 </td>
 <td class="content">
-Measurements of used capacity are displayed differently depending on the version of System Manager you are using, as explained in <a href="concepts/capacity-measurements-in-sm-concept.html">Capacity measurements in System Manager</a>.
+Measurements of used capacity are displayed differently depending on the version of System Manager you are using, as explained in <a href="./concepts/capacity-measurements-in-sm-concept.html">Capacity measurements in System Manager</a>.
 </td>
 </tr>
 </table>
@@ -37105,6 +37303,140 @@ In System Manager, capacity representations do not account for root storage tier
 <p>You can also view the capacity that specific volumes use in the local tier by selecting the <strong>Volumes</strong> tab.</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="view-the-capacity-of-the-volumes-in-a-storage-vm">View the capacity of the volumes in a storage VM</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br>
+.Related information</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="concept_nas_file_system_analytics_overview.html">File System Analytics overview</a></p>
+</li>
+</ul>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>You can view how much capacity is used by the volumes in a storage VM and how much is still available.  The total measurement of used and available storage is called "capacity across volumes".</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Select <strong>Storage</strong> &gt; <strong>Storage VMs</strong>.</p>
+</li>
+<li>
+<p>Click on the name of the storage VM.</p>
+</li>
+<li>
+<p>Scroll to the <strong>Capacity</strong> section, which shows a bar chart with the following measurements:</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Physical used</strong>:  Sum of physical used capacity across all volumes in this storage VM.</p>
+</li>
+<li>
+<p><strong>Available</strong>:  Sum of available capacity across all volumes in this storage VM.</p>
+</li>
+<li>
+<p><strong>Logical used</strong>:  Sum of logical used capacity across all volumes in this storage VM.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>For more details about the measurements, see <a href="./concepts/capacity-measurements-in-sm-concept.html">Capacity measurements in System Manager</a>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="enable-max-cap" class="paragraph">
+<p>== Enable the maximum capacity limit of a storage VM</p>
+</div>
+<div class="paragraph">
+<p>Beginning with ONTAP 9.13.1, you can specify the maximum capacity that can be allocated for all volumes in a storage VM.  You can enable the maximum capacity when you add a storage VM or when you edit an existing storage VM.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Select <strong>Storage</strong> &gt; <strong>Storage VMs</strong>.</p>
+</li>
+<li>
+<p>Perform one of the following:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>To add a storage VM, click <span class="image"><img src="./media/icon_add_blue_bg.gif" alt="add icon"></span>.</p>
+</li>
+<li>
+<p>To edit a storage VM, click <span class="image"><img src="./media/icon_kabob.gif" alt="kebab icon"></span> next to the name of the storage VM, and then click <strong>Edit</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Enter or modify the settings for the storage VM, and check the check box labeled "Enable maximum capacity limit".</p>
+</li>
+<li>
+<p>Specify the maximum capacity size.</p>
+</li>
+<li>
+<p>Specify the percentage of the maximum capacity you want to use as a threshold to trigger alerts.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>== View the maximum capacity limit of a storage VM</p>
+</div>
+<div class="paragraph">
+<p>Beginning with ONTAP 9.13.1, you can view the maximum capacity limit of a storage VM.</p>
+</div>
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You must <a href="#enable-max-cap">enable the maximum capacity limit of a storage VM</a> before you can view it.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Select <strong>Storage</strong> &gt; <strong>Storage VMs</strong>.</p>
+<div class="paragraph">
+<p>You can view the maximum capacity measurements in two ways:</p>
+</div>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>In the row for the storage VM, view the <strong>Maximum Capacity</strong> column which contains a bar chart that shows the used capacity, available capacity, and maximum capacity.</p>
+</li>
+<li>
+<p>Click the name of the storage VM. On the <strong>Overview</strong> tab, scroll to view the maximum capacity, allocated capacity, and capacity alert threshold values in the left column.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>For more details about the measurements, see <a href="./concepts/capacity-measurements-in-sm-concept.html">Capacity measurements in System Manager</a>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; 1cd72a711a22402a37a7d69ddd3e151191e2316f</p>
+</div>
+</div>
 </div>
 </div>
 </div>
