@@ -34573,11 +34573,11 @@
         Modify
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Modify architecture"
+      data-pdf-filename="Modify geometry"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/ontap/consistency-groups/modify-geometry-task.html">
-        Modify architecture
+        Modify geometry
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Clone"
@@ -37419,7 +37419,7 @@ SM-BC relationships cannot be established on volumes mounted for NAS access.
 <p>After they are provisioned, you can move volumes associated with consistency groups between mirrored and unmirrored aggregates. Therefore, volumes associated with consistency groups can be located on mirrored aggregates, unmirrored aggregates, or both. You can modify mirrored aggregates containing volumes associated with consistency groups to become unmirrored. Similarly, you can modify unmirrored aggregates containing volumes associated with consistency groups to enable mirroring.</p>
 </div>
 <div class="paragraph">
-<p>Volumes associated with consistency groups placed on mirrored aggregates and their Snapshots, including any consistency group Snapshots, are replicated to the remote site (site B). The contents of the volumes on site B are consistency group semantics-compliant. You can access replicated consistency group Snapshots using consistency group Snapshot REST API and System Manager on clusters running ONTAP 9.11.1 or later.</p>
+<p>Volumes associated and Snapshots associated with consistency groups placed on mirrored aggregates are replicated to the remote site (site B). The contents of the volumes on site B provide a write-order guarantee for the consistency group, allowing you to recover from site B in the event of a disaster. You can access replicated consistency group Snapshots using consistency group Snapshot REST API and System Manager on clusters running ONTAP 9.11.1 or later.</p>
 </div>
 <div class="paragraph">
 <p>If some or all the volumes associated with a consistency group are located on unmirrored aggregates that are not currently accessible, GET or DELETE operations on the consistency group behave as if the local volumes or hosting aggregates are offline.</p>

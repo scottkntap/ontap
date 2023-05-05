@@ -34573,11 +34573,11 @@
         Modify
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Modify architecture"
+      data-pdf-filename="Modify geometry"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/ontap/consistency-groups/modify-geometry-task.html">
-        Modify architecture
+        Modify geometry
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Clone"
@@ -37222,7 +37222,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-04-14 15:11:15 +0000">04/14/2023</time>
+    <time datetime="2023-05-04 18:06:39 +0000">05/04/2023</time>
     
   
 
@@ -37295,7 +37295,7 @@ You can always upgrade directly to the next adjacent ONTAP release family using 
 <p>For example, you can use the direct update path from 9.8 to 9.9.1, or from 9.8 to 9.10.1.</p>
 </div>
 <div class="paragraph">
-<p><strong>Note:</strong> Beginning with ONTAP 9.11.1, software images support upgrading directly to releases that are three releases higher than the running release. For example, you can use the direct upgrade path from 9.8 to 9.11.1.</p>
+<p><strong>Note:</strong> Beginning with ONTAP 9.11.1, software images support upgrading directly to releases that are three or more releases higher than the running release. For example, you can use the direct upgrade path from 9.8 to 9.11.1.</p>
 </div>
 </li>
 <li>
@@ -37942,7 +37942,25 @@ If you are upgrading a MetroCluster IP configuration from 9.8 to 9.10.1 on any o
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">9.10.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">9.11.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">9.10.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
 </tr>
@@ -37951,7 +37969,11 @@ If you are upgrading a MetroCluster IP configuration from 9.8 to 9.10.1 on any o
 <td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">9.9.1</p></td>
+<td class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">9.9.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
 </tr>
@@ -37964,7 +37986,13 @@ If you are upgrading a MetroCluster IP configuration from 9.8 to 9.10.1 on any o
 <td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">9.8</p></td>
+<td class="tableblock halign-left valign-top" rowspan="5"><p class="tableblock">9.8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
+- 9.8 &#8594; 9.12.1<br>
+- 9.12.1 &#8594; 9.13.1</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
 </tr>
@@ -37981,7 +38009,14 @@ If you are upgrading a MetroCluster IP configuration from 9.8 to 9.10.1 on any o
 <td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="5"><p class="tableblock">9.7</p></td>
+<td class="tableblock halign-left valign-top" rowspan="6"><p class="tableblock">9.7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
+- 9.7 &#8594; 9.9.1<br>
+- 9.9.1 &#8594; 9.12.1<br>
+- 9.12.1 &#8594; 9.13.1</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
 - 9.7 &#8594; 9.9.1<br>
@@ -38008,7 +38043,14 @@ If you are upgrading a MetroCluster IP configuration from 9.8 to 9.10.1 on any o
 <td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="6"><p class="tableblock">9.6</p></td>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">9.6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
+- 9.6 &#8594; 9.8<br>
+- 9.8 &#8594; 9.12.1<br>
+- 9.12.1 &#8594; 9.13.1</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
 - 9.6 &#8594; 9.8<br>
@@ -38041,7 +38083,15 @@ If you are upgrading a MetroCluster IP configuration from 9.8 to 9.10.1 on any o
 <td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">9.5</p></td>
+<td class="tableblock halign-left valign-top" rowspan="8"><p class="tableblock">9.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
+- 9.5 &#8594; 9.7<br>
+- 9.7 &#8594; 9.9.1<br>
+- 9.9.1 &#8594; 9.12.1<br>
+- 9.12.1 &#8594; 9.13.1</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
 - 9.5 &#8594; 9.7<br>
@@ -38083,7 +38133,15 @@ If you are upgrading a MetroCluster IP configuration from 9.8 to 9.10.1 on any o
 <td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="8"><p class="tableblock">9.4</p></td>
+<td class="tableblock halign-left valign-top" rowspan="9"><p class="tableblock">9.4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
+- 9.4 &#8594; 9.5<br>
+- 9.5 &#8594; 9.7<br>
+- 9.7 &#8594; 9.9.1<br>
+- 9.12.1 &#8594; 9.13.1</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
 - 9.4 &#8594; 9.5<br>
@@ -38138,7 +38196,16 @@ If you are upgrading a MetroCluster IP configuration from 9.8 to 9.10.1 on any o
 <td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="9"><p class="tableblock">9.3</p></td>
+<td class="tableblock halign-left valign-top" rowspan="10"><p class="tableblock">9.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
+- 9.3 &#8594; 9.5<br>
+- 9.5 &#8594; 9.7<br>
+- 9.7 &#8594; 9.9.1<br>
+- 9.9.1 &#8594; 9.12.1<br>
+- 9.12.1 &#8594; 9.13.1</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
 - 9.3 &#8594; 9.5<br>
@@ -38197,7 +38264,17 @@ If you are upgrading a MetroCluster IP configuration from 9.8 to 9.10.1 on any o
 <td class="tableblock halign-left valign-top"><p class="tableblock">not available</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="10"><p class="tableblock">9.2</p></td>
+<td class="tableblock halign-left valign-top" rowspan="11"><p class="tableblock">9.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
+- 9.2 &#8594; 9.3<br>
+- 9.3 &#8594; 9.5<br>
+- 9.5 &#8594; 9.7<br>
+- 9.7 &#8594; 9.9.1<br>
+- 9.9.1 &#8594; 9.12.1<br>
+- 9.12.1 &#8594; 9.13.1</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
 - 9.2 &#8594; 9.3<br>
@@ -38269,7 +38346,17 @@ If you are upgrading a MetroCluster IP configuration from 9.8 to 9.10.1 on any o
 <td class="tableblock halign-left valign-top"><p class="tableblock">direct</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="11"><p class="tableblock">9.1</p></td>
+<td class="tableblock halign-left valign-top" rowspan="12"><p class="tableblock">9.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
+- 9.1 &#8594; 9.3<br>
+- 9.3 &#8594; 9.5<br>
+- 9.5 &#8594; 9.7<br>
+- 9.7 &#8594; 9.9.1<br>
+- 9.9.1 &#8594; 9.12.1<br>
+- 9.12.1 &#8594; 9.13.1</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
 - 9.1 &#8594; 9.3<br>
@@ -38345,7 +38432,18 @@ If you are upgrading a MetroCluster IP configuration from 9.8 to 9.10.1 on any o
 <td class="tableblock halign-left valign-top"><p class="tableblock">not available</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="12"><p class="tableblock">9.0</p></td>
+<td class="tableblock halign-left valign-top" rowspan="13"><p class="tableblock">9.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
+- 9.0 &#8594; 9.1<br>
+- 9.1 &#8594; 9.3<br>
+- 9.3 &#8594; 9.5<br>
+- 9.5 &#8594; 9.7<br>
+- 9.7 &#8594; 9.9.1<br>
+- 9.9.1 &#8594; 9.12.1<br>
+- 9.12.1 &#8594; 9.13.1</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">multi-stage<br>
 - 9.0 &#8594; 9.1<br>
