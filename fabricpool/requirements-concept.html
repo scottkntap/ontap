@@ -24979,11 +24979,11 @@
         Enable or disable NFSv4.1
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Enable or disable NFSv4 storepool limit controls"
+      data-pdf-filename="Manage NFSv4 storepool limits"
       data-li-level="4#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/ontap/nfs-admin/manage-nfsv4-storepool-controls-task.html">
-        Enable or disable NFSv4 storepool limit controls
+        Manage NFSv4 storepool limits
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Enable or disable pNFS"
@@ -37222,7 +37222,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-01-18 22:13:16 +0000">01/18/2023</time>
+    <time datetime="2023-05-05 15:07:49 +0000">05/05/2023</time>
     
   
 
@@ -37551,6 +37551,13 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>When tiering data that is accessed by SAN protocols, NetApp recommends using private clouds, like StorageGRID, due to connectivity considerations.</p>
+</div>
+<div class="paragraph">
+<p><strong>Important</strong></p>
+</div>
+<div class="paragraph">
+<p>+
+You should be aware that when using FabricPool in a SAN environment with a Windows host, if the object storage becomes unavailable for an extended period of time when tiering data to the cloud, files on the NetApp LUN on the Windows host might become inaccessible or disappear. See the Knowledge Base article <a href="https://kb.netapp.com/onprem/ontap/os/During_FabricPool_S3_object_store_unavailable_Windows_SAN_host_reported_filesystem_corruption" target="_blank" rel="noopener">During FabricPool S3 object store unavailable Windows SAN host reported filesystem corruption</a>.</p>
 </div>
 </div>
 </div>
