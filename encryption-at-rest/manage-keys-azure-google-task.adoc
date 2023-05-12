@@ -21,7 +21,8 @@ When using AKV or Cloud KMS, be aware that by default a data SVM LIF is used to 
 .Prerequisites
 * The ONTAP cluster's nodes must support NVE 
 * Volume Encryption (VE) license installed 
-* Multi-tenant Encryption Key Management (MTEKM) license installed 
+* Multi-tenant Encryption Key Management (MT_EK_MGMT) license installed
+** NOTE: The MT_EK_MGMT license is no longer required with CVO starting in 9.12.1
 * You must be a cluster or SVM administrator 
 
 .Limitations
